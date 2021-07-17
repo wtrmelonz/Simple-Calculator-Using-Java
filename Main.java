@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args){
         // todo Membuat program kalkulator sederhana
-        float a,b,hasil;
+        float a,b,result;
         char operator;
         Scanner inputAngka = new Scanner(System.in);
 
@@ -20,33 +20,31 @@ public class Main {
         // todo menambahkan kondisi if-else
         if (operator == '+'){
             // penjumlahan
-            hasil = a + b;
-            System.out.print("Hasilnya = " + hasil);
+            result = a + b;
+            System.out.print("Hasilnya = " + result);
         }
         else if (operator == '-'){
             // pengurangan
-            hasil = a - b;
-            System.out.print("Hasilnya = " + hasil);
+            result = a - b;
+            System.out.print("Hasilnya = " + result);
         }
         else if (operator == '*'){
             // perkalian
-            hasil = a * b;
-            System.out.print("Hasilnya = " + hasil);
+            result = a * b;
+            System.out.print("Hasilnya = " + result);
         }
         else if (operator == '/'){
             // pembagian
-            hasil = a / b;
+            result = a / b;
             if (b == 0){
                System.out.print("Hasil pembagi nol akan menghasilkan nilai tak hingga");
            }
             else {
-                System.out.println("Hasil " + hasil);
+                System.out.println("Hasil " + result);
             }
         }
         else {
-            System.out.println("Operator tidak ditemukan");
+            System.out.println("Operator has not found");
         }
-
-
     }
 }
