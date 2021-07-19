@@ -1,50 +1,61 @@
 package com.tutorial;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args){
-        // todo Membuat program kalkulator sederhana
-        float a,b,result;
-        char operator;
-        Scanner inputAngka = new Scanner(System.in);
+        // Todo Simple calculator using Switch and Ternary Operator
 
-        System.out.print("Angka a = ");
-        a = inputAngka.nextFloat();
+        // Using Switch
+        float a,b,hasil;
+        String operator;
+        Scanner inputUser;
+
+        inputUser = new Scanner(System.in);
+//        System.out.print("Nilai 1 : ");
+//        a = inputUser.nextInt();
+//        System.out.print("Operator : ");
+//        operator = inputUser.next();
+//        System.out.print("Nilai 2 : ");
+//        b = inputUser.nextInt();
+//
+//        switch (operator){
+//            case "+":
+//                hasil = a + b;
+//                System.out.print("= " + hasil +"\n");
+//                break;
+//            case "-":
+//                hasil = a - b;
+//                System.out.print("= " + hasil +"\n");
+//                break;
+//            case "*":
+//                hasil = a * b;
+//                System.out.print("= " + hasil +"\n");
+//                break;
+//            case "/":
+//                hasil = a / b;
+//                System.out.print("= " + hasil +"\n");
+//                break;
+//            default:
+//                System.out.print("Operator " + operator + " tidak ditemukan\n");
+//        }
+
+        // Using Ternary Operator
+        System.out.println("\n==== NEXT ====");
+
+        System.out.print("a = ");
+        a = inputUser.nextInt();
         System.out.print("operator: ");
-        operator = inputAngka.next().charAt(0);
-        System.out.print("Angka b = ");
-        b = inputAngka.nextFloat();
+        operator = inputUser.next();
+        System.out.print("b = ");
+        b = inputUser.nextInt();
 
-        // todo menambahkan kondisi if-else
-        if (operator == '+'){
-            // penjumlahan
-            result = a + b;
-            System.out.print("Hasilnya = " + result);
-        }
-        else if (operator == '-'){
-            // pengurangan
-            result = a - b;
-            System.out.print("Hasilnya = " + result);
-        }
-        else if (operator == '*'){
-            // perkalian
-            result = a * b;
-            System.out.print("Hasilnya = " + result);
-        }
-        else if (operator == '/'){
-            // pembagian
-            result = a / b;
-            if (b == 0){
-               System.out.print("Hasil pembagi nol akan menghasilkan nilai tak hingga");
-           }
-            else {
-                System.out.println("Hasil " + result);
-            }
-        }
-        else {
-            System.out.println("Operator has not found");
-        }
+        a = (operator.equals("+")) ? (a + b) : (0);
+            System.out.println("Hasil = " + a);
+            b = (operator.equals("-")) ? (a - b) : (0);
+                System.out.println("hasil = " + b);
+                int c = (operator.equals("*")) ? (a * c) : 
+                        ()
     }
 }
