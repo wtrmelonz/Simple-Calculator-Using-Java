@@ -13,33 +13,33 @@ public class Main {
         Scanner inputUser;
 
         inputUser = new Scanner(System.in);
-//        System.out.print("Nilai 1 : ");
-//        a = inputUser.nextInt();
-//        System.out.print("Operator : ");
-//        operator = inputUser.next();
-//        System.out.print("Nilai 2 : ");
-//        b = inputUser.nextInt();
-//
-//        switch (operator){
-//            case "+":
-//                hasil = a + b;
-//                System.out.print("= " + hasil +"\n");
-//                break;
-//            case "-":
-//                hasil = a - b;
-//                System.out.print("= " + hasil +"\n");
-//                break;
-//            case "*":
-//                hasil = a * b;
-//                System.out.print("= " + hasil +"\n");
-//                break;
-//            case "/":
-//                hasil = a / b;
-//                System.out.print("= " + hasil +"\n");
-//                break;
-//            default:
-//                System.out.print("Operator " + operator + " tidak ditemukan\n");
-//        }
+        System.out.print("Nilai 1 : ");
+        a = inputUser.nextInt();
+        System.out.print("Operator : ");
+        operator = inputUser.next();
+        System.out.print("Nilai 2 : ");
+        b = inputUser.nextInt();
+
+        switch (operator){
+            case "+":
+                hasil = a + b;
+                System.out.print("= " + hasil +"\n");
+                break;
+            case "-":
+                hasil = a - b;
+                System.out.print("= " + hasil +"\n");
+                break;
+            case "*":
+                hasil = a * b;
+                System.out.print("= " + hasil +"\n");
+                break;
+            case "/":
+                hasil = a / b;
+                System.out.print("= " + hasil +"\n");
+                break;
+            default:
+                System.out.print("Operator " + operator + " tidak ditemukan\n");
+        }
 
         // Using Ternary Operator
         System.out.println("\n==== NEXT ====");
